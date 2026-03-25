@@ -1,0 +1,6 @@
+Experiment,Name,Modification,Train Loss,Val Loss,Train Acc (%),Val Acc (%)
+Exp 1,BERT Baseline,Baseline: [CLS] → Linear(768→5),0.7395,1.0456,69.05,53.07
+Exp 2,BERT + Dropout,Added Dropout(0.4) before classifier,0.6754,1.0906,71.58,53.92
+Exp 3,BERT + Hidden Layer,Two-layer head: 768→256→5 with ReLU,0.7963,1.0311,65.97,54.37
+Exp 4,BERT Frozen,Frozen BERT backbone; head-only training,1.2938,1.2917,41.82,42.36
+Exp 5,BERT + Diffusion Decoder,Novel diffusion-inspired decoder (T=3 steps),0.7167,1.0598,70.72,53.92
